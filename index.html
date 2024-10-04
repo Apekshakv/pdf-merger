@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+}
+input {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.btn{
+    background-color: green;
+}
+    </style>
+    <title>File Merger</title>
+</head>
+<body>
+    <nav>
+        <ul>
+        
+            <li>Merge PDFs</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>FILE MERGER</h1>
+        <h3>Select the PDF files you want to merge</h3>
+        <form method="POST" action="/merge" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="pdfFiles">Select the PDF files you want to merge:</label>
+                <input type="file" name="pdfs" id="pdfFiles" class="form-control-file" multiple accept=".pdf" required><br><br>
+                <input class="btn" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
