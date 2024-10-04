@@ -48,7 +48,16 @@ Before running this project, ensure you have the following installed:
 ├── uploads/            # Temporary storage for uploaded files
 
 ├── testodf.js          # Module for PDF merging functionality
+
 └── README.md           # Project documentation
+
+How It Works
+
+1) The user is prompted to select two PDF files.
+
+2) The server receives the uploaded files and merges them using the mergepdfs function from testodf.js.
+
+3) The merged PDF is saved in the public/ folder and served via a static route for download.
 
    
 
