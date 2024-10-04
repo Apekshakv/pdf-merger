@@ -27,7 +27,24 @@ Before running this project, ensure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/pdf-merger.git
    cd pdf-merger
+   
 2 .Install the dependencies:
 ---- npm install
+
 3.Start the application:
-----node app.js
+
+----node index.js
+
+4. Navigate to http://localhost:8000 in your web browser to use the app.
+
+5.  Project Structure
+ ── index.js              # Main application file
+├── index.html          # HTML front-end for file selection
+├── public/             # Folder to serve static files (merged PDFs)
+├── uploads/            # Temporary storage for uploaded files
+├── testodf.js          # Module for PDF merging functionality
+└── README.md           # Project documentation
+
+   
+
+
