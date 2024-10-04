@@ -38,10 +38,15 @@ Before running this project, ensure you have the following installed:
 4. Navigate to http://localhost:8000 in your web browser to use the app.
 
 5.  Project Structure
+   
  ── index.js              # Main application file
+ 
 ├── index.html          # HTML front-end for file selection
+
 ├── public/             # Folder to serve static files (merged PDFs)
+
 ├── uploads/            # Temporary storage for uploaded files
+
 ├── testodf.js          # Module for PDF merging functionality
 └── README.md           # Project documentation
 
